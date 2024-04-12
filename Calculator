@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Calculator{
+    public static void main(String args[]){
+Scanner sc = new Scanner(System.in);
+int a,b;
+System.out.println("Enter the value of a ");
+a=sc.nextInt();
+System.out.println("Enter the value of b ");
+b=sc.nextInt();
+System.out.println("Enter the operation you want to perform");
+char op;
+op= sc.charAt(0);
+switch(op){
+    case '+' :{
+    System.out.println("Result of addition is : "a+b);
+    break; 
+
+    }
+    case '-' :{
+    System.out.println("Result of subtraction is : "a-b);
+    break; 
+
+    }
+     case '*' :{
+    System.out.println("Result of multiplication is : "a*b);
+    break; 
+    }
+    case '/' :{
+    System.out.println("Result of division is : "a/b);
+    break; 
+    }
+    case '%':{
+        System.out.println("Result of modulo operation is : "a%b);
+        break;
+    }
+    default : {
+        System.out.println("Invalid operation!!");
+    }
+        }
+        
+    }
+}
